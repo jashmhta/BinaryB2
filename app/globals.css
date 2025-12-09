@@ -1,8 +1,8 @@
+@import 'aos/dist/aos.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import 'aos/dist/aos.css';
 
 :root {
   --navy: 210 50% 15%; /* Darker navy for better contrast */

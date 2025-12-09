@@ -9,7 +9,8 @@ generator client {
 }
 
 datasource db {
-  provider = "postgresql"
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
 }
 
 model ContactSubmission {
@@ -19,9 +20,9 @@ model ContactSubmission {
   phone     String
   company   String?
   service   String?
-  message   String   @db.Text
+  message   String  
   ipAddress String?  @map("ip_address")
-  userAgent String?  @map("user_agent") @db.Text
+  userAgent String?  @map("user_agent")
   status    String   @default("new") // new, read, replied, archived
   emailSent Boolean  @default(false) @map("email_sent")
   createdAt DateTime @default(now()) @map("created_at")
@@ -36,11 +37,11 @@ model ContactSubmission {
 model Analytics {
   id        String   @id @default(cuid())
   eventName String   @map("event_name")
-  eventData Json?    @map("event_data")
+  eventData String?    @map("event_data")
   userId    String?  @map("user_id")
   sessionId String?  @map("session_id")
   ipAddress String?  @map("ip_address")
-  userAgent String?  @map("user_agent") @db.Text
+  userAgent String?  @map("user_agent")
   createdAt DateTime @default(now()) @map("created_at")
 
   @@map("analytics")

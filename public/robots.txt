@@ -1,58 +1,5 @@
-# Binary Bonds - Robots.txt with AEO Support
-# Optimized for traditional search engines and AI crawlers
-
-# All search engines
+# *
 User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /_next/
-Disallow: /admin/
-Crawl-delay: 1
-
-# Google-specific
-User-agent: Googlebot
-Allow: /
-Disallow: /api/
-
-# Google AI (Bard, SGE)
-User-agent: Google-Extended
-Allow: /
-
-# Bing-specific
-User-agent: Bingbot
-Allow: /
-Disallow: /api/
-
-# OpenAI GPTBot (ChatGPT)
-User-agent: GPTBot
-Allow: /
-
-# Anthropic Claude
-User-agent: anthropic-ai
-Allow: /
-
-# Perplexity AI
-User-agent: PerplexityBot
-Allow: /
-
-# Common Crawl (used by many AI systems)
-User-agent: CCBot
-Allow: /
-
-# Meta AI
-User-agent: FacebookBot
-Allow: /
-
-# Cohere AI
-User-agent: cohere-ai
-Allow: /
-
-# AI2Bot (Allen Institute)
-User-agent: AI2Bot
-Allow: /
-
-# Applebot (Apple Intelligence)
-User-agent: Applebot
 Allow: /
 
 # Host
