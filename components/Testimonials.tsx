@@ -6,14 +6,14 @@ export default function Testimonials() {
   const testimonials = [
     {
       name: "Rajesh Kumar",
-      position: "CFO, National Insurance Company",
+      position: "CFO, Insurance Company",
       company: "Leading Insurance Provider",
       content: "Binary Bonds has been instrumental in structuring our bond portfolio. Their expertise in government securities and credit rating advisory has helped us achieve optimal returns while maintaining regulatory compliance.",
       rating: 5
     },
     {
       name: "Priya Sharma",
-      position: "Fund Manager, Apex Mutual Fund",
+      position: "Fund Manager, Mutual Fund",
       company: "Top 10 Mutual Fund House",
       content: "The team's deep understanding of both primary and secondary bond markets is exceptional. They've consistently delivered competitive pricing and swift execution for our high-value transactions.",
       rating: 5
